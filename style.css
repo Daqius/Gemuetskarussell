@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+:root{--bg:#100b18;--paper:#f3e1b7;--paper2:#e7cb91;--ink:#2b1a16;--gold:#d9a84c}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:radial-gradient(circle at 50% 0,#6b1930 0,transparent 35%),linear-gradient(135deg,#130a1c,#0e1727 50%,#1c0b13);min-height:100vh}
+.hero{padding:42px 18px 30px;background:linear-gradient(180deg,rgba(15,8,23,.05),rgba(15,8,23,.8))}
+.hero-inner{max-width:1000px;margin:auto;text-align:center}.eyebrow{font-size:12px;letter-spacing:.16em;color:#ffdf8a;font-weight:700}
+h1{font-size:clamp(46px,8vw,84px);margin:5px 0;color:#fff0bc;text-shadow:0 3px #8b2028,0 0 28px rgba(255,193,68,.45)}
+.hero p{color:#ffe8ba;font-size:18px;margin:0 auto 22px}.search-wrap{max-width:650px;margin:auto}
+#search{width:100%;padding:16px 20px;border-radius:999px;border:3px solid #e5b965;background:#fff2cf;font:700 17px Georgia;outline:0}
+main{max-width:1100px;margin:auto;padding:14px}.filters{display:flex;gap:8px;overflow:auto;position:sticky;top:0;z-index:5;padding:3px 0 13px}
+.filter{white-space:nowrap;border:1px solid #f3d681;border-radius:999px;padding:10px 15px;background:rgba(38,18,40,.9);color:#ffe7b3;font:700 14px Georgia;cursor:pointer}.filter.active{background:#efc35f;color:#321923}
+.panel{background:linear-gradient(180deg,#f8e9bf,#e7c98e);border:3px solid #a56e31;border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.35);padding:22px;margin:12px 0}
+.intro{display:flex;justify-content:space-between;gap:20px;align-items:center}.kicker{letter-spacing:.15em;font-size:12px;font-weight:700;color:#8d1e28}
+h2{margin:.2em 0 .4em;font-size:30px}.intro p{margin:0;line-height:1.5}.quick{padding:12px 14px;border:2px solid #b77e32;border-radius:14px;font-weight:700;white-space:nowrap}
+.role-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.role-card{display:flex;gap:12px;width:100%;text-align:left;padding:14px;border-radius:16px;border:2px solid #c18a43;background:#f8e9bf;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.role-card.citizen{border-left:8px solid #2a80bd}.role-card.outsider{border-left:8px solid #687fc6}.role-card.minion{border-left:8px solid #8d2230}.role-card.demon{border-left:8px solid #5b0710}
+.role-icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:#f1d6a2;border:2px solid #c08a3d;font-size:23px;flex:none}.role-body{min-width:0}
+.role-team{font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;font-weight:700}.role-name{font-size:20px;font-weight:700;margin:2px 0 6px}.role-preview{font-size:14px;line-height:1.33;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.arrow{margin-left:auto;font-size:30px;color:#8b5c2d}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rule{display:flex;gap:12px;padding:14px;border:1px solid #c08a3d;border-radius:14px;background:rgba(247,226,176,.65)}.rule-num{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#902431;color:#fff4d2;font-weight:700;flex:none}.rule p{margin:0;line-height:1.45}
+.table-scroll{overflow:auto}table{width:100%;border-collapse:collapse;min-width:760px}th,td{border:1px solid #b88943;padding:9px;text-align:center}thead th{background:#402943;color:#ffeac0}tbody th{text-align:left;background:#ead09b}
+.source-images{display:grid;grid-template-columns:1fr 1fr;gap:14px}.source-images img{width:100%;border-radius:14px;border:2px solid #b98234}
+.modal{display:none;position:fixed;inset:0;z-index:20;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-backdrop{position:absolute;inset:0;background:rgba(5,3,10,.78);backdrop-filter:blur(4px)}
+.modal-card{position:relative;z-index:1;width:min(700px,100%);padding:26px;border-radius:22px;background:linear-gradient(180deg,#fae9bd,#e4c486);border:3px solid #aa702e;box-shadow:0 28px 100px rgba(0,0,0,.5)}.modal-card h2{font-size:36px}.ability{font-size:20px;line-height:1.55}.note{padding:12px;border-radius:12px;background:#f5daa2;border:1px solid #c68a35;font-weight:700}.badge{display:inline-block;padding:8px 12px;border-radius:999px;font-weight:700;border:2px solid #b8782f}.badge.citizen{background:#d9ecfb;color:#215b92}.badge.outsider{background:#e3e9fb;color:#495e9b}.badge.minion,.badge.demon{background:#f3d1d1;color:#7b1822}
+.modal-close{position:absolute;top:8px;right:10px;border:0;background:transparent;font-size:34px;cursor:pointer;color:#4a1f1f}.empty{grid-column:1/-1;text-align:center;padding:30px;color:#ffe7bc}
+footer{max-width:1100px;margin:auto;padding:28px 18px;color:#f7ddb2;display:flex;justify-content:space-between;font-size:12px}
+@media(max-width:760px){.intro,.rules,.source-images{display:grid;grid-template-columns:1fr}.role-grid{grid-template-columns:1fr}.role-name{font-size:18px}.ability{font-size:18px}footer{display:grid;gap:8px}}
